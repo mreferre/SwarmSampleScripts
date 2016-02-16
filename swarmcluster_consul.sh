@@ -62,9 +62,9 @@ if [ "${DRIVER}" == 'vmwarevsphere' ]; then
   fi # if [ $3 = 'vcenter' ]; then
   
   if [ "${ENDPOINT}" == 'esx' ]; then
-    export VSPHERE_VCENTER=192.168.209.11                                # vCenter IP/FQDN
-    export VSPHERE_USERNAME='root'                                       # vCenter user 
-    export VSPHERE_PASSWORD='Vmware123!'                                 # vCenter user password 
+    export VSPHERE_VCENTER=192.168.209.11                                # ESXi IP/FQDN
+    export VSPHERE_USERNAME='root'                                       # ESXi user 
+    export VSPHERE_PASSWORD='Vmware123!'                                 # ESXi user password 
     export VSPHERE_NETWORK='VM Network'                                  # PortGroup
     export VSPHERE_DATASTORE='datastore1'                                # Datastore
     #export VSPHERE_POOL='/*/host/*/Resources/SwarmTeam9'                # *optional* Resource Pool name (on the ESX host)
